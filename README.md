@@ -1,5 +1,5 @@
 # [imperial-spy](https://www.duneimperiumassets.com/assets/imperium_card/Imperial%20Spy)
-I wrote a few AWS Lambda functions so that an HTML tracking embed I inserted into my emails would also track total email opens. The embed then swaps the image to show the number of email opens, implicitly informing both users how frequently the email is observed.
+I wrote a few AWS Lambda functions so that an HTML tracking embed I inserted into my emails would also track total email opens. The embed then swaps the image to show the number of email opens, implicitly informing both users how frequently the email is observed. It is meant to act as a polite reminder to value privacy.
 
 I have the [total number of opens](https://varunjawarani.com/imperial-spy) on my website.
 
