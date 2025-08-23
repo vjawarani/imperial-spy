@@ -1,15 +1,12 @@
-# imperial-spy
-I wrote a few AWS Lambda functions so that an HTML tracking embed I inserted into my emails would also track total email opens. The embed then swaps the image to show the number of email opens, clarifying to the recipients that I was aware of both their frenetic email-opening and their avoidant lack of response. It was meant to elicit a fear response in its purpose of privacy advocacy, alerting the recipient to just how much data they are giving away.
+# [imperial-spy](https://www.duneimperiumassets.com/assets/imperium_card/Imperial%20Spy)
+I wrote a few AWS Lambda functions so that an HTML tracking embed I inserted into my emails would also track total email opens. The embed then swaps the image to show the number of email opens, implicitly informing both users how frequently the email is observed.
 
 I have the [total number of opens](https://varunjawarani.com/imperial-spy) on my website.
 
 The embed is similar to a tracking pixel, but is instead replaced with an image that will depict the number of opens inline.
 
-## Tools Used:
-- AWS Lambda
-- AWS S3
-- AWS DynamoDB
-- AWS Route53
+The setup was simple:
+- AWS (Lambda, S3, DynamoDB, Route 53)
 - anime.js
 
 ## HTML Insert
@@ -17,7 +14,7 @@ The embed is similar to a tracking pixel, but is instead replaced with an image 
 <html>
   <body style="font-size:6pt; font-family:Arial, sans-serif;">
     <p>
-      You have opened this email <img src="https://api.varunjawarani.com/open?id=<emailUUID>" alt="numEmailOpens"> times.<br>
+      We have opened this email <img src="https://api.varunjawarani.com/open?id=<emailUUID>" alt="this many"> times.<br>
       Email is insecure. 
       <a href="https://varunjawarani.com/imperial-spy">Learn more</a>.
     </p>
