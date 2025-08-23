@@ -3,7 +3,7 @@ I wrote a few AWS Lambda functions so that an HTML tracking embed I inserted int
 
 I have the [total number of opens](https://varunjawarani.com/imperial-spy) on my website.
 
-The embed is similar to a tracking pixel, but is instead replaced with an image that will depict the number of opens inline. The image is one of 52: the numbers 0-50 stored in an S3 bucket, and one image that simply says '50plus'.
+The embed is similar to a tracking pixel, but is instead replaced with an image that will depict the number of opens inline.
 
 ## Tools Used:
 - AWS Lambda
@@ -17,9 +17,7 @@ The embed is similar to a tracking pixel, but is instead replaced with an image 
 <html>
   <body style="font-size:6pt; font-family:Arial, sans-serif;">
     <p>
-      You have opened this email <img src="https://api.varunjawarani.com/open?id=<emailUUID>" alt="numEmailOpens"> times:<br>
-    </p>
-    <p>
+      You have opened this email <img src="https://api.varunjawarani.com/open?id=<emailUUID>" alt="numEmailOpens"> times.<br>
       Email is insecure. 
       <a href="https://varunjawarani.com/imperial-spy">Learn more</a>.
     </p>
